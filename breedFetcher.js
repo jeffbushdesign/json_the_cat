@@ -11,14 +11,20 @@ let search = baseUrl + breed;
 
 // make a request
 request(`${search}`, (error, response, body) => {
-  console.log('error:', error); // Print the error if one occurred
-  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-  // console.log('body:', body); // Print the HTML 
-
   const data = JSON.parse(body);
+  if (error) {
+    console.log('error:', error); // Print the error if one occurred
+  }
+  // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+  // console.log('body:', body); // Print the HTML 
+  if (data.length < 1) {
+    console.log("Sorry, we can't find that breed of cat.\nPlease try another breed.");
+  } else {
+    console.log(data[0]['description']);
+  }
   // console.log(data);
   // console.log(typeof data);
-  console.log(data[0]['description']);
+  // console.log(data[0]['name']);
 });
 
 // How to use this code

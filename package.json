@@ -1,7 +1,7 @@
 {
   "name": "json_the_cat",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. In terminal navigate to where the file is being stored 2. Type ```node breedFetcher.js bengal```",
   "main": "breedFetcher.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
