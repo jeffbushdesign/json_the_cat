@@ -1,7 +1,7 @@
 ### Executing program
 
 1. In terminal navigate to where the file is being stored
-2. Type ```node breedFetcher.js bengal```
+2. Type ```node index.js bengal```
 
 Output --> Code will consult the cat api and return a description of the breed that you entered.
 In this example, it would be a description of bengal:
