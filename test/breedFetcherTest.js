@@ -18,9 +18,6 @@ describe('fetchBreedDescription', () => {
     });
   });
 
-
-
-
   it('should return null for description when there is an error.', (done) => {
     fetchBreedDescription('door', (err, desc) => {
       // we expect no error for this scenario
@@ -34,6 +31,5 @@ describe('fetchBreedDescription', () => {
       done();
     });
   });
-
 
 });
